@@ -1,0 +1,52 @@
+//获取主页面
+module.exports.getIndexPage=(req,res)=>{
+  res.render('index');
+}
+exports.getDetailPage=(req,res)=>{
+  res.render('detail');
+}
+exports.getListPage=(req,res)=>{
+  res.render('list');
+}
+
+
+//获取后台页面
+//登陆页面
+exports.getAdminPage=(req,res)=>{
+  // console.log(1111111111111111)
+  res.render('../admin/index');
+}
+exports.getAdCategories=(req,res)=>{
+  res.render('../admin/categories');
+}
+exports.getAdLogin=(req,res)=>{
+  res.render('../admin/login');
+}
+
+exports.getAdComments=(req,res)=>{
+  res.render('../admin/comments');
+}
+exports.getAdNavMenus=(req,res)=>{
+  res.render('../admin/nav-menus');
+}
+exports.getAdPwdReset=(req,res)=>{
+  res.render('../admin/password-reset');
+}
+exports.getAdPostAdd=(req,res)=>{
+  res.render('../admin/post-add');
+}
+exports.getAdPosts=(req,res)=>{
+  res.render('../admin/posts');
+}
+exports.getAdProfile=(req,res)=>{
+  res.render('../admin/profile');
+}
+exports.getAdSetting=(req,res)=>{
+  res.render('../admin/settings');
+}
+exports.getAdSlides=(req,res)=>{
+  res.render('../admin/slides');
+}
+exports.getAdUsers=(req,res)=>{
+  res.render('../admin/users');
+}
